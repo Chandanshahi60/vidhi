@@ -1,0 +1,396 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "helpindiaonline.co.in"
+        }
+    ],
+    "info": {
+        "name": "Ebook Api",
+        "_postman_id": "c636b689-5202-4371-aef1-c8c5e212cee6",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Login User",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/login",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email_mobile\":\"dignissimos\",\"password\":\"cwuxzt\"}"
+                        },
+                        "description": "This endpoint lets you Login.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Favouite Genre List",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/favouite-genre",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/favouite-genre"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint lets you Favouite Genre Category list."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Register User",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/register",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"eum\",\"mobile\":\"1879187145\",\"email\":\"kris.sauer@example.net\",\"password\":\"l\"}"
+                        },
+                        "description": "This endpoint lets you Register.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Verify Register OTP",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/register\/otp-verify",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/register\/otp-verify"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"mobile\":\"8859258589\",\"otp\":\"4957\"}"
+                        },
+                        "description": "This endpoint lets you Verify Register OTP.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Home Banner",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/banner",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/banner"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint lets you Banners."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get New Addtion",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/new-addtion",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/new-addtion"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint lets you New Addtion."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Authors List",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/authors",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/authors"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint lets you Authors List."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Add Favouite Genre",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/store-favouite-genre",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/store-favouite-genre"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"category_id\":242}"
+                        },
+                        "description": "This endpoint lets you Favouite Genre store."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Your Interest",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/your-interest",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/your-interest"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint lets Your Interest."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Category List",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/category\/list",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/category\/list"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint lets you Category List."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Category Books List",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/category\/books",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/category\/books"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"category_id\":1235.53307965}"
+                        },
+                        "description": "This endpoint lets you Category Books List."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Book Detail",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/book\/detail",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/book\/detail"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"book_id\":1205550.93606}"
+                        },
+                        "description": "This endpoint lets you Book Detail."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Add to Wishlist",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/book\/add\/wishlist",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/user\/book\/add\/wishlist"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"book_id\":6802514}"
+                        },
+                        "description": "This endpoint lets you Add to Wishlist."
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "bearer"
+    }
+}

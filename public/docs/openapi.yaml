@@ -1,0 +1,497 @@
+openapi: 3.0.3
+info:
+  title: 'Ebook Api'
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'https://helpindiaonline.co.in/ebook/public'
+paths:
+  /api/v1/login:
+    post:
+      summary: 'Login User'
+      description: 'This endpoint lets you Login.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email_mobile:
+                  type: string
+                  description: ''
+                  example: dignissimos
+                password:
+                  type: string
+                  description: 'Must be at least 6 characters.'
+                  example: cwuxzt
+              required:
+                - email_mobile
+                - password
+      security: []
+  /api/v1/user/favouite-genre:
+    post:
+      summary: 'Get Favouite Genre List'
+      description: 'This endpoint lets you Favouite Genre Category list.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+  /api/v1/register:
+    post:
+      summary: 'Register User'
+      description: 'This endpoint lets you Register.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: eum
+                mobile:
+                  type: string
+                  description: 'Must be 10 digits.'
+                  example: '1879187145'
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: kris.sauer@example.net
+                password:
+                  type: string
+                  description: 'Must be at least 6 characters.'
+                  example: l
+              required:
+                - name
+                - mobile
+                - email
+                - password
+      security: []
+  /api/v1/register/otp-verify:
+    post:
+      summary: 'Verify Register OTP'
+      description: 'This endpoint lets you Verify Register OTP.'
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                mobile:
+                  type: string
+                  description: 'Must be 10 digits.'
+                  example: '8859258589'
+                otp:
+                  type: string
+                  description: 'Must be 4 digits.'
+                  example: '4957'
+              required:
+                - mobile
+                - otp
+      security: []
+  /api/v1/user/banner:
+    post:
+      summary: 'Get Home Banner'
+      description: 'This endpoint lets you Banners.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+  /api/v1/user/new-addtion:
+    post:
+      summary: 'Get New Addtion'
+      description: 'This endpoint lets you New Addtion.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+  /api/v1/user/authors:
+    post:
+      summary: 'Get Authors List'
+      description: 'This endpoint lets you Authors List.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+  /api/v1/user/store-favouite-genre:
+    post:
+      summary: 'Add Favouite Genre'
+      description: 'This endpoint lets you Favouite Genre store.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                category_id:
+                  type: number
+                  description: ''
+                  example: !!float 242
+              required:
+                - category_id
+  /api/v1/user/your-interest:
+    post:
+      summary: 'Get Your Interest'
+      description: 'This endpoint lets Your Interest.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+  /api/v1/user/category/list:
+    post:
+      summary: 'Get Category List'
+      description: 'This endpoint lets you Category List.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+  /api/v1/user/category/books:
+    post:
+      summary: 'Get Category Books List'
+      description: 'This endpoint lets you Category Books List.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                category_id:
+                  type: number
+                  description: ''
+                  example: 1235.53307965
+              required:
+                - category_id
+  /api/v1/user/book/detail:
+    post:
+      summary: 'Get Book Detail'
+      description: 'This endpoint lets you Book Detail.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                book_id:
+                  type: number
+                  description: ''
+                  example: 1205550.93606
+              required:
+                - book_id
+  /api/v1/user/book/add/wishlist:
+    post:
+      summary: 'Add to Wishlist'
+      description: 'This endpoint lets you Add to Wishlist.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                book_id:
+                  type: number
+                  description: ''
+                  example: !!float 6802514
+              required:
+                - book_id
+tags:
+  -
+    name: Endpoints
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: ''
+security:
+  -
+    default: []
