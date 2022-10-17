@@ -44,7 +44,7 @@
 
                {{-- <div class="form-group society" style="display:none"> --}}
                 <div class="form-group">
-                    <label class="col-form-label pt-0" for="society">Society List</label>
+                    <label class="col-form-label pt-0" for="society">Community List</label>
                     <select class="form-select" id="society_id" name="society_id" required>
                             <option value="">Select</option>
                             @foreach ($society as $item)
@@ -92,8 +92,8 @@
                 <td align="center"><input class="btn btn-warning" type="button" value="Click" style="background:#000;" onclick="setInfoToBoxSA('admin@gmail.com','admin@123','5');"></td>
               </tr>
               <tr style="background:#00a65a;color:#fff;">
-                <td>Society Owner</td>
-                <td>society123@gmail.com</td>
+                <td>Community Owner</td>
+                <td>community123@gmail.com</td>
                 <td>12345678</td>
                 <td align="center"><input class="btn btn-warning"  type="button" value="Click" style="background:#000;" onclick="setInfoToBox('society123@gmail.com','12345678','1');"></td>
               </tr>
